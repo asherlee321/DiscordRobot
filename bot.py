@@ -9,8 +9,10 @@ client = discord.Client()
 async def on_message(message):
     if message.content.startswith('james') or message.content.startswith('itai') or message.content.startswith('jude'):
         await client.send_message(message.channel, "James, Itai and Jude are all obvious dumb-heads")
+        await client.send_message(message.channel, message.author)
     if  "pls" in message.content:
         await client.delete_message(message)
+    
        
 
 
