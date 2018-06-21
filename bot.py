@@ -10,7 +10,9 @@ async def on_message(message):
     if message.content.startswith('james') or message.content.startswith('itai') or message.content.startswith('jude'):
         await client.send_message(message.channel, "This Bot will live forever")
     if message.content.startswith('loop'):
-       await client.send_message(message.channel, message.content) 
+       await client.send_message(message.channel, message.content)
+    if message.content.startswith('stop'):
+        exit()
     if  "pls" in message.content:
         await client.delete_message(message)
  
