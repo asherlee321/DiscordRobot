@@ -9,7 +9,7 @@ client = discord.Client()
 async def on_message(message):
     if message.content.startswith('james') or message.content.startswith('itai') or message.content.startswith('jude'):
         await client.send_message(message.channel, "This Bot will live forever")
-    if message.content.startswith('loop') and !message.content.startswith('stop'):
+    if message.content.startswith('loop') and not message.content.startswith('stop'):
        await client.send_message(message.channel, message.content)
   
     if  "pls" in message.content:
