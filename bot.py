@@ -12,6 +12,8 @@ async def on_message(message):
         await client.send_message(message.channel, message.author)
     if  "pls" in message.content:
         await client.delete_message(message)
+    if message.author == "Dank Memer#6539":
+        await client.delete_message(message)
     
        
 
