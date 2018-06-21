@@ -3,7 +3,6 @@ import discord
 import asyncio
 TOKEN = 'NDU4MTYxMjMzNjcwMDQ1NzEw.DgjqXg.ZYrnJyx7Fr_7-oTtNo8iOsrHD4o'
 client = discord.Client()
-keepGoing = True
 
 @client.event
 async def on_message(message):
@@ -11,10 +10,12 @@ async def on_message(message):
         await client.send_message(message.channel, "This Bot will live forever")
     if message.content.startswith('loop'):
         while keepGoing == True:
+            keepGoing = True
             await client.send_message(message.channel, message.content)
-            
-    if message.content.startswith('stop'):
-        keepGoing = False
+           
+     if message.content.startswith('stop'):
+            keepGoing = False        
+   
   
     if  "pls" in message.content:
         await client.delete_message(message)
