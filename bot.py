@@ -8,12 +8,12 @@ client = discord.Client()
 @client.event
 async def on_message(message):
     if message.content.startswith('james') or message.content.startswith('itai') or message.content.startswith('jude'):
-        await client.send_message(message.channel, "James, Itai and Jude are all obvious dumb-heads")
-        await client.send_message(message.channel, "tet")
+        await client.send_message(message.channel, "This Bot will live forever")
+    if message.content.startswith('loop'):
+       await client.send_message(message.channel, message.content) 
     if  "pls" in message.content:
         await client.delete_message(message)
-    if message.author == "Dank Memer#6539":
-        await client.delete_message(message)
+ 
     
        
 
