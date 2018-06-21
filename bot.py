@@ -3,7 +3,7 @@ import discord
 import asyncio
 TOKEN = 'NDU4MTYxMjMzNjcwMDQ1NzEw.DgjqXg.ZYrnJyx7Fr_7-oTtNo8iOsrHD4o'
 client = discord.Client()
-
+keepGoing = False
 @client.event
 async def on_message(message):
     if message.content.startswith('james') or message.content.startswith('itai') or message.content.startswith('jude'):
