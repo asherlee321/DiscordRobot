@@ -6,7 +6,7 @@ client = discord.Client()
 keepGoing = False
 @client.event
 async def on_message(message):
-    if message.content.startswith('james') or message.content.startswith('itai') or message.content.startswith('jude'):
+    if message.content.startswith('james') or message.content.startswith('itai') or message.content.startswith('jude') or message.content.startswith('toby'):
         await client.send_message(message.channel, "This Bot will live forever")
     if message.content.startswith('loop'):
         while True:
